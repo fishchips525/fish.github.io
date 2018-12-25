@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) = $\alpha \sum_{ h_{1}, …, h_{m} }P(Q|e_{1},…e_{n},h_{1}, …, h_{m})$   2 the">
+    <meta name="description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AI revision">
 <meta property="og:url" content="http://yoursite.com/2018/12/24/AI-revision/index.html">
 <meta property="og:site_name" content="Huang Fish">
-<meta property="og:description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) = $\alpha \sum_{ h_{1}, …, h_{m} }P(Q|e_{1},…e_{n},h_{1}, …, h_{m})$   2 the">
+<meta property="og:description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-24T17:35:33.611Z">
+<meta property="og:image" content="http://latex.codecogs.com/gif.latex?%24%5Calpha%20%5Csum_%7B%20h_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%20%7DP%28Q%7Ce_%7B1%7D%2C...e_%7Bn%7D%2Ch_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%29%24">
+<meta property="og:image" content="http://latex.codecogs.com/gif.latex?%5Cfrac%7BP%28y%7Cx%29%7D%7BP%28x%29%7D">
+<meta property="og:updated_time" content="2018-12-25T12:45:24.322Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AI revision">
-<meta name="twitter:description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) = $\alpha \sum_{ h_{1}, …, h_{m} }P(Q|e_{1},…e_{n},h_{1}, …, h_{m})$   2 the">
+<meta name="twitter:description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt;">
+<meta name="twitter:image" content="http://latex.codecogs.com/gif.latex?%24%5Calpha%20%5Csum_%7B%20h_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%20%7DP%28Q%7Ce_%7B1%7D%2C...e_%7Bn%7D%2Ch_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%29%24">
     
     
         
@@ -142,7 +145,7 @@
 <li><p>最差情况：时间复杂度O(d<sup>n</sup>)</p>
 </li>
 <li><p>需要储存联合分布之后进行规范化(normalizaiton)</p>
-<p>P(Q|e<sub>1</sub>, …, e<sub>n)</sub>) = $\alpha \sum_{ h_{1}, …, h_{m} }P(Q|e_{1},…e_{n},h_{1}, …, h_{m})$</p>
+<p>P(Q|e<sub>1</sub>, …, e<sub>n)</sub>) = <img src="http://latex.codecogs.com/gif.latex?%24%5Calpha%20%5Csum_%7B%20h_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%20%7DP%28Q%7Ce_%7B1%7D%2C...e_%7Bn%7D%2Ch_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%29%24" alt="This is the rendered form of the equation. You can not edit this directly. Right click will give you the option to save the image, and in most browsers you can drag the image onto your desktop or another program."></p>
 </li>
 </ul>
 <h3 id="2-the-chain-rule-链式法则"><a href="#2-the-chain-rule-链式法则" class="headerlink" title="2 the chain rule 链式法则"></a>2 the chain rule 链式法则</h3><p>P(X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>)  =  P(X<sub>3</sub>|X<sub>1</sub>, X<sub>2</sub>) P(X<sub>2</sub>|X<sub>1</sub>) P(X<sub>1</sub>)</p>
@@ -153,7 +156,7 @@
 <li><p>AI 基础</p>
 </li>
 <li><p>传统概率论：先验概率P(a) ； 现代概率：后验概率P(a|b)</p>
-<p>P(x|y) =  $\frac{P(y|x)}{P(x)}$P(x)</p>
+<p>P(x|y) =  <img src="http://latex.codecogs.com/gif.latex?%5Cfrac%7BP%28y%7Cx%29%7D%7BP%28x%29%7D" alt="This is the rendered form of the equation. You can not edit this directly. Right click will give you the option to save the image, and in most browsers you can drag the image onto your desktop or another program.">P(x)</p>
 </li>
 </ul>
 
