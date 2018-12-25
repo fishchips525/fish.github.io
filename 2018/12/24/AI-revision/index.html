@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt;">
+    <meta name="description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton)  P(Q|e1, …, en)) =     2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;g">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AI revision">
 <meta property="og:url" content="http://yoursite.com/2018/12/24/AI-revision/index.html">
 <meta property="og:site_name" content="Huang Fish">
-<meta property="og:description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt;">
+<meta property="og:description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton)  P(Q|e1, …, en)) =     2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;g">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?%24%5Calpha%20%5Csum_%7B%20h_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%20%7DP%28Q%7Ce_%7B1%7D%2C...e_%7Bn%7D%2Ch_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%29%24">
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?%5Cfrac%7BP%28y%7Cx%29%7D%7BP%28x%29%7D">
-<meta property="og:updated_time" content="2018-12-25T12:45:24.322Z">
+<meta property="og:updated_time" content="2018-12-25T15:05:10.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AI revision">
-<meta name="twitter:description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt;">
+<meta name="twitter:description" content="lecture 2 : Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton)  P(Q|e1, …, en)) =     2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;g">
 <meta name="twitter:image" content="http://latex.codecogs.com/gif.latex?%24%5Calpha%20%5Csum_%7B%20h_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%20%7DP%28Q%7Ce_%7B1%7D%2C...e_%7Bn%7D%2Ch_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%29%24">
     
     
@@ -105,7 +105,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#lecture-2-Probabilistic-Reasoning-概率推理"><span class="toc-number">1.</span> <span class="toc-text">lecture 2 : Probabilistic Reasoning 概率推理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#lecture-2-Probabilistic-Reasoning-概率推理"><span class="toc-number">1.</span> <span class="toc-text">lecture 2 : Probabilistic Reasoning 概率推理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -145,7 +145,9 @@
 <li><p>最差情况：时间复杂度O(d<sup>n</sup>)</p>
 </li>
 <li><p>需要储存联合分布之后进行规范化(normalizaiton)</p>
+<blockquote>
 <p>P(Q|e<sub>1</sub>, …, e<sub>n)</sub>) = <img src="http://latex.codecogs.com/gif.latex?%24%5Calpha%20%5Csum_%7B%20h_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%20%7DP%28Q%7Ce_%7B1%7D%2C...e_%7Bn%7D%2Ch_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%29%24" alt="This is the rendered form of the equation. You can not edit this directly. Right click will give you the option to save the image, and in most browsers you can drag the image onto your desktop or another program."></p>
+</blockquote>
 </li>
 </ul>
 <h3 id="2-the-chain-rule-链式法则"><a href="#2-the-chain-rule-链式法则" class="headerlink" title="2 the chain rule 链式法则"></a>2 the chain rule 链式法则</h3><p>P(X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>)  =  P(X<sub>3</sub>|X<sub>1</sub>, X<sub>2</sub>) P(X<sub>2</sub>|X<sub>1</sub>) P(X<sub>1</sub>)</p>
@@ -156,9 +158,25 @@
 <li><p>AI 基础</p>
 </li>
 <li><p>传统概率论：先验概率P(a) ； 现代概率：后验概率P(a|b)</p>
+<blockquote>
 <p>P(x|y) =  <img src="http://latex.codecogs.com/gif.latex?%5Cfrac%7BP%28y%7Cx%29%7D%7BP%28x%29%7D" alt="This is the rendered form of the equation. You can not edit this directly. Right click will give you the option to save the image, and in most browsers you can drag the image onto your desktop or another program.">P(x)</p>
+</blockquote>
 </li>
 </ul>
+<h3 id="4-条件独立-conditional-independence"><a href="#4-条件独立-conditional-independence" class="headerlink" title="4 条件独立 conditional independence"></a>4 条件独立 conditional independence</h3><p>x 条件独立于y， 给定z</p>
+<blockquote>
+<p>P(x|y, z) = P(x|z)  (条件由于独立于事件，所以不会影响概率)</p>
+</blockquote>
+<blockquote>
+<p>P(x, y|z) = P(x|z)P(y|z) （由于两事件独立，所以可以分开计算概率，不会互相产生影响）</p>
+</blockquote>
+<p>the chain rule ==&gt; BNs</p>
+<h3 id="5-条件概率分布表-conditional-probability-table-CPT"><a href="#5-条件概率分布表-conditional-probability-table-CPT" class="headerlink" title="5 条件概率分布表 conditional probability table(CPT)"></a>5 条件概率分布表 conditional probability table(CPT)</h3><h3 id="6-贝叶斯网络-BNs"><a href="#6-贝叶斯网络-BNs" class="headerlink" title="6 贝叶斯网络 BNs"></a>6 贝叶斯网络 BNs</h3><p>n个变量， 值域d， 父节点数k</p>
+<p>完全联合分布规模 O(d<sup>n</sup>)</p>
+<p>贝叶斯网络规模 O(n*d<sup>k</sup>)</p>
+<blockquote>
+<p> P(X<sub>1</sub>, X<sub>2</sub>, …, X<sub>n</sub>)  = Ԥ<sub>i </sub> P(X<sub>i</sub>|Parents(X<sub>i</sub>))</p>
+</blockquote>
 
   </div>
 </article>
@@ -184,7 +202,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#lecture-2-Probabilistic-Reasoning-概率推理"><span class="toc-number">1.</span> <span class="toc-text">lecture 2 : Probabilistic Reasoning 概率推理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#lecture-2-Probabilistic-Reasoning-概率推理"><span class="toc-number">1.</span> <span class="toc-text">lecture 2 : Probabilistic Reasoning 概率推理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
