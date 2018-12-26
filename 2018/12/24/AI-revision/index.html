@@ -15,7 +15,8 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?%24%5Calpha%20%5Csum_%7B%20h_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%20%7DP%28Q%7Ce_%7B1%7D%2C...e_%7Bn%7D%2Ch_%7B1%7D%2C%20...%2C%20h_%7Bm%7D%29%24">
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?%5Cfrac%7BP%28y%7Cx%29%7D%7BP%28x%29%7D">
-<meta property="og:updated_time" content="2018-12-25T18:52:21.324Z">
+<meta property="og:image" content="http://yoursite.com/2018/12/24/AI-revision/payoff_matrices.jpeg">
+<meta property="og:updated_time" content="2018-12-26T20:34:23.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AI revision">
 <meta name="twitter:description" content="Probabilistic Reasoning 概率推理1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt; P(X1, X2, …">
@@ -105,7 +106,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Probabilistic-Reasoning-概率推理"><span class="toc-number">1.</span> <span class="toc-text">Probabilistic Reasoning 概率推理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#贝叶斯网络-Bayes-Nets"><span class="toc-number"></span> <span class="toc-text">贝叶斯网络(Bayes Nets)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#近似推理-approximate-inference"><span class="toc-number">1.</span> <span class="toc-text">近似推理 approximate inference</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-先验采样-prior-sampling"><span class="toc-number">1.1.</span> <span class="toc-text">1 先验采样 prior sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-拒绝采样-rejection-sampling"><span class="toc-number">1.2.</span> <span class="toc-text">2 拒绝采样 rejection sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-似然性加权采样-likelihood-weighting"><span class="toc-number">1.3.</span> <span class="toc-text">3 似然性加权采样 likelihood weighting</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Probabilistic-Reasoning-概率推理"><span class="toc-number">1.</span> <span class="toc-text">Probabilistic Reasoning 概率推理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#贝叶斯网络-Bayes-Nets"><span class="toc-number"></span> <span class="toc-text">贝叶斯网络(Bayes Nets)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#近似推理-approximate-inference"><span class="toc-number">1.</span> <span class="toc-text">近似推理 approximate inference</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-先验采样-prior-sampling"><span class="toc-number">1.1.</span> <span class="toc-text">1 先验采样 prior sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-拒绝采样-rejection-sampling"><span class="toc-number">1.2.</span> <span class="toc-text">2 拒绝采样 rejection sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-似然性加权采样-likelihood-weighting"><span class="toc-number">1.3.</span> <span class="toc-text">3 似然性加权采样 likelihood weighting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Gibbs-sampling"><span class="toc-number">1.4.</span> <span class="toc-text">4 Gibbs sampling</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lecture-3-Tutorial"><span class="toc-number"></span> <span class="toc-text">lecture 3 Tutorial</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Strategic-reasoning"><span class="toc-number"></span> <span class="toc-text">Strategic reasoning</span></a>
     </li></div>
   </span>
 </div>
@@ -178,14 +179,46 @@
 <li><p>贝叶斯网络的箭头表示 相关性(correlation), 不一定是因果关系</p>
 </li>
 </ul>
-<h1 id="贝叶斯网络-Bayes-Nets"><a href="#贝叶斯网络-Bayes-Nets" class="headerlink" title="贝叶斯网络(Bayes Nets)"></a>贝叶斯网络(Bayes Nets)</h1><ul>
-<li><p>navie bayes model</p>
+<h1 id="贝叶斯网络-Bayes-Nets"><a href="#贝叶斯网络-Bayes-Nets" class="headerlink" title="贝叶斯网络(Bayes Nets)"></a>贝叶斯网络(Bayes Nets)</h1><h2 id="近似推理-approximate-inference"><a href="#近似推理-approximate-inference" class="headerlink" title="近似推理 approximate inference"></a>近似推理 approximate inference</h2><h3 id="1-先验采样-prior-sampling"><a href="#1-先验采样-prior-sampling" class="headerlink" title="1 先验采样 prior sampling"></a>1 先验采样 prior sampling</h3><p>按拓扑图顺序采样 n = 1, 2, …, n</p>
+<h3 id="2-拒绝采样-rejection-sampling"><a href="#2-拒绝采样-rejection-sampling" class="headerlink" title="2 拒绝采样 rejection sampling"></a>2 拒绝采样 rejection sampling</h3><p>采样时删除条件不满足的样本</p>
+<h3 id="3-似然性加权采样-likelihood-weighting"><a href="#3-似然性加权采样-likelihood-weighting" class="headerlink" title="3 似然性加权采样 likelihood weighting"></a>3 似然性加权采样 likelihood weighting</h3><h3 id="4-Gibbs-sampling"><a href="#4-Gibbs-sampling" class="headerlink" title="4 Gibbs sampling"></a>4 Gibbs sampling</h3><h1 id="lecture-3-Tutorial"><a href="#lecture-3-Tutorial" class="headerlink" title="lecture 3 Tutorial"></a>lecture 3 Tutorial</h1><ul>
+<li>1 navie bayes model</li>
+</ul>
 <p>P(Cause， Effect<sub>1</sub>,  Effect<sub>2</sub>, …,  Effect<sub>n</sub>)  =P(Cause)  Ԥ<sub>i </sub> P(Effect<sub>i</sub>|Cause)</p>
+<ul>
+<li>2 noisy-or model</li>
+</ul>
+<p>Alarm false only if all mechanisms independently inhibited</p>
+<p>P(f|⌝l, ⌝i) = 0</p>
+<p>P(⌝f|⌝l, ⌝i) = 1</p>
+<ul>
+<li><p>3 计算可能的概率数量 ： have network ∑<sub>n</sub> 2<sup>k</sup> ; no network 2<sup>n</sup>-1</p>
+</li>
+<li><p>5 Enumeration algorithm</p>
 </li>
 </ul>
-<h2 id="近似推理-approximate-inference"><a href="#近似推理-approximate-inference" class="headerlink" title="近似推理 approximate inference"></a>近似推理 approximate inference</h2><h3 id="1-先验采样-prior-sampling"><a href="#1-先验采样-prior-sampling" class="headerlink" title="1 先验采样 prior sampling"></a>1 先验采样 prior sampling</h3><p>按拓扑图顺序采样 n = 1, 2, …, n</p>
-<h3 id="2-拒绝采样-rejection-sampling"><a href="#2-拒绝采样-rejection-sampling" class="headerlink" title="2 拒绝采样 rejection sampling"></a>2 拒绝采样 rejection sampling</h3><p>采样时删除条件不满足的样本</p>
-<h3 id="3-似然性加权采样-likelihood-weighting"><a href="#3-似然性加权采样-likelihood-weighting" class="headerlink" title="3 似然性加权采样 likelihood weighting"></a>3 似然性加权采样 likelihood weighting</h3><p>###4 Gibbs sampling</p>
+<p>(1) 正规化ɑ(P(m) , P(⌝m)) </p>
+<p>(2) 枚举展开所有隐藏变量(t,⌝t, c, ⌝c) </p>
+<p>P(M|h, s) = P(M, h, s)/P(h, s) = ɑP(M, h, s) =    ɑ∑<sub>t</sub>∑<sub>c</sub>P(M, h, s, t ,c)</p>
+<ul>
+<li>6 prior sampling</li>
+</ul>
+<p>从第一个sample开始匹配，在条件中找到合适的区间。找到变量的值，多次重复计算联合分布。</p>
+<p>after many iterations，joint probability = （the proportion of samples(匹配到的)[未匹配到的 = 0])</p>
+<ul>
+<li>7 rejection sampling</li>
+</ul>
+<p>只采用满足条件的作为sample，如果不满足，从m开始重新取数判断</p>
+<p>栗子： 计算P(m|h, s), 选择h，s为true的值，如果不满足，从新开始取sample</p>
+<ul>
+<li>8 importance sampling</li>
+</ul>
+<p>计算权重</p>
+<h1 id="Strategic-reasoning"><a href="#Strategic-reasoning" class="headerlink" title="Strategic reasoning"></a>Strategic reasoning</h1><ul>
+<li>Payoff matrices</li>
+</ul>
+<p><img src="/2018/12/24/AI-revision/payoff_matrices.jpeg" alt=""></p>
+<p>（scissors, paper）==&gt; player 1 = 1, player 2 = -1</p>
 
   </div>
 </article>
@@ -211,7 +244,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Probabilistic-Reasoning-概率推理"><span class="toc-number">1.</span> <span class="toc-text">Probabilistic Reasoning 概率推理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#贝叶斯网络-Bayes-Nets"><span class="toc-number"></span> <span class="toc-text">贝叶斯网络(Bayes Nets)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#近似推理-approximate-inference"><span class="toc-number">1.</span> <span class="toc-text">近似推理 approximate inference</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-先验采样-prior-sampling"><span class="toc-number">1.1.</span> <span class="toc-text">1 先验采样 prior sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-拒绝采样-rejection-sampling"><span class="toc-number">1.2.</span> <span class="toc-text">2 拒绝采样 rejection sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-似然性加权采样-likelihood-weighting"><span class="toc-number">1.3.</span> <span class="toc-text">3 似然性加权采样 likelihood weighting</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Probabilistic-Reasoning-概率推理"><span class="toc-number">1.</span> <span class="toc-text">Probabilistic Reasoning 概率推理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#贝叶斯网络-Bayes-Nets"><span class="toc-number"></span> <span class="toc-text">贝叶斯网络(Bayes Nets)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#近似推理-approximate-inference"><span class="toc-number">1.</span> <span class="toc-text">近似推理 approximate inference</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-先验采样-prior-sampling"><span class="toc-number">1.1.</span> <span class="toc-text">1 先验采样 prior sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-拒绝采样-rejection-sampling"><span class="toc-number">1.2.</span> <span class="toc-text">2 拒绝采样 rejection sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-似然性加权采样-likelihood-weighting"><span class="toc-number">1.3.</span> <span class="toc-text">3 似然性加权采样 likelihood weighting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Gibbs-sampling"><span class="toc-number">1.4.</span> <span class="toc-text">4 Gibbs sampling</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lecture-3-Tutorial"><span class="toc-number"></span> <span class="toc-text">lecture 3 Tutorial</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Strategic-reasoning"><span class="toc-number"></span> <span class="toc-text">Strategic reasoning</span></a>
     </li></div>
 
     <div id="share-footer" style="display: none">
