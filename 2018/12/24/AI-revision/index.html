@@ -17,7 +17,7 @@
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?%5Cfrac%7BP%28y%7Cx%29%7D%7BP%28x%29%7D">
 <meta property="og:image" content="http://yoursite.com/2018/12/24/AI-revision/payoff_matrices.png">
 <meta property="og:image" content="http://yoursite.com/2018/12/24/AI-revision/dominate.png">
-<meta property="og:updated_time" content="2019-01-01T21:18:32.330Z">
+<meta property="og:updated_time" content="2019-01-01T21:23:04.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AI revision">
 <meta name="twitter:description" content="Probabilistic Reasoning 概率推理基础1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt; P(X1, X2,">
@@ -228,11 +228,11 @@
 <li><p>囚徒困境 ： 可能都不是最好结果</p>
 </li>
 <li><p>占优策略只对某一方而言</p>
-<font color="#FFFE4E1" size="4">分析： </font>
+<font color="#FFFE4E1" size="3">分析： </font>
 
-<font color="#FFFE4E1" size="4">(1) 某方存在占优策略 ：A dominates B for i, since i get a bigger payoff for A, no matter what j plays </font>
+<font color="#FFFE4E1" size="3">(1) 某方存在占优策略 ：A dominates B for i, since i get a bigger payoff for A, no matter what j plays </font>
 
-<font color="#FFFE4E1" size="4">(2) 不存在占优策略 ：no strategy is better for either i or j no matter what the other does. </font>
+<font color="#FFFE4E1" size="3">(2) 不存在占优策略 ：no strategy is better for either i or j no matter what the other does. </font>
 
 </li>
 </ul>
@@ -245,11 +245,11 @@
 </ul>
 <font color="#FFFE4E1" size="3">首先A选择一方i，导致B的最优选择为j；然后B选择j后，判断A是否选择i为最优；如果满足条件，则策略 ( i, j ) 最优 </font>
 
-<font color="#FFFE4E1" size="4"><em> 习题分析 </em> </font>
+<font color="#FFFE4E1" size="3"><em> 习题分析 </em> </font>
 
-<font color="#FFFE4E1" size="4">(1)是NE ： for (A, B) , if j changes strategy, it will get 1 rather 2, if i changes strategy, it will get 2 rather 4. so (A, B) is a Nash Equilibrium.</font>
+<font color="#FFFE4E1" size="3"><em> (1)是NE ： for (A, B) , if j changes strategy, it will get 1 rather 2, if i changes strategy, it will get 2 rather 4. so (A, B) is a Nash Equilibrium. </em> </font>
 
-<font color="#FFFE4E1" size="4">(1)不是NE ： for (A, B) , if j changes strategy, its payoff will go up to 4, so (A, B) is not a Nash Equilibrium.</font>
+<font color="#FFFE4E1" size="3"><em> (1)不是NE ： for (A, B) , if j changes strategy, its payoff will go up to 4, so (A, B) is not a Nash Equilibrium. </em> </font>
 
 <h3 id="3-Pareto-Optimality-帕累托最优"><a href="#3-Pareto-Optimality-帕累托最优" class="headerlink" title="3 Pareto Optimality 帕累托最优"></a>3 Pareto Optimality 帕累托最优</h3><ul>
 <li>对于每一方来说，分配方案已经是最好的（如果一方想获得更多利益，会损害其他人的利益）</li>
@@ -258,16 +258,16 @@
 </ul>
 <font color="#FFFE4E1" size="3">对选定的组合尝试改变其他方，观察是否至少有一方反对</font>
 
-<font color="#FFFE4E1" size="4"><em> 习题分析 </em> </font>
+<font color="#FFFE4E1" size="3"><em> 习题分析 </em> </font>
 
-<font color="#FFFE4E1" size="4">(1)是Pareto Optimality ： (A, B) is Pareto Optimality since moving away from either will make at least one agent worse off.</font>
+<font color="#FFFE4E1" size="3"><em> (1)是Pareto Optimality ： (A, B) is Pareto Optimality since moving away from either will make at least one agent worse off. </em> </font>
 
-<font color="#FFFE4E1" size="4">(2)不是Pareto Optimality： (A, B)  is not a Pareto Optimality since moving A to C, the payoff will go up.</font>
+<font color="#FFFE4E1" size="3"><em> (2)不是Pareto Optimality： (A, B)  is not a Pareto Optimality since moving A to C, the payoff will go up. </em> </font>
 
 <h3 id="4-Social-Welfare"><a href="#4-Social-Welfare" class="headerlink" title="4 Social Welfare"></a>4 Social Welfare</h3><p>整体收益最大 overall benefit, not individuals</p>
-<font color="#FFFE4E1" size="4"><em> 习题分析 </em> </font>
+<font color="#FFFE4E1" size="3"><em> 习题分析 </em> </font>
 
-<font color="#FFFE4E1" size="4">There are three outcomes with a social welfare of 6 : (A, B), (A, C)和(D,B), which is the maximum social welfare of any out come  </font>
+<font color="#FFFE4E1" size="3"><em> There are three outcomes with a social welfare of 6 : (A, B), (A, C)和(D,B), which is the maximum social welfare of any out come </em> </font>
 
 <h3 id="5-Constant-sum-games-常和博弈"><a href="#5-Constant-sum-games-常和博弈" class="headerlink" title="5 Constant sum games 常和博弈"></a>5 Constant sum games 常和博弈</h3><p>u<sub>i</sub>(a) + u<sub>j</sub>(a) = c for all a ∈  A<sub>i</sub> * A<sub>j</sub></p>
 <h3 id="6-Zero-sum-games-零和博弈"><a href="#6-Zero-sum-games-零和博弈" class="headerlink" title="6 Zero - sum games 零和博弈"></a>6 Zero - sum games 零和博弈</h3><p>u<sub>i</sub>(a) + u<sub>j</sub>(a) = 0 for all a ∈  A<sub>i</sub> * A<sub>j</sub></p>
