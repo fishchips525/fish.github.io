@@ -17,7 +17,7 @@
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?%5Cfrac%7BP%28y%7Cx%29%7D%7BP%28x%29%7D">
 <meta property="og:image" content="http://yoursite.com/2018/12/24/AI-revision/payoff_matrices.png">
 <meta property="og:image" content="http://yoursite.com/2018/12/24/AI-revision/dominate.png">
-<meta property="og:updated_time" content="2019-01-01T15:10:15.326Z">
+<meta property="og:updated_time" content="2019-01-01T15:23:51.252Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AI revision">
 <meta name="twitter:description" content="Probabilistic Reasoning 概率推理基础1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt; P(X1, X2,">
@@ -236,11 +236,43 @@
 <li>some interaction scenario have more than one NE 有多个纳什均衡组合</li>
 <li>对一个组合达到最优选择（不同于占优策略，只考虑自己一方的结果）</li>
 </ul>
+<font color="red" size="3">首先A选择一方i，导致B的最优选择为j；然后B选择j后，判断A是否选择i为最优；如果满足条件，则策略 ( i, j ) 最优</font>
+
 <h2 id="3-Pareto-Optimality-帕累托最优"><a href="#3-Pareto-Optimality-帕累托最优" class="headerlink" title="3 Pareto Optimality 帕累托最优"></a>3 Pareto Optimality 帕累托最优</h2><ul>
 <li>对于每一方来说，分配方案已经是最好的（如果一方想获得更多利益，会损害其他人的利益）</li>
 <li>No other outcome that makes one agent better off without making another agent worse off</li>
 <li>if an outcome is PO, then at least one agent will be reluctant to move away from it(because this agent will be worse off)</li>
 </ul>
+<font color="red" size="3">对选定的组合尝试改变其他方，观察是否至少有一方反对</font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </div>
 </article>
