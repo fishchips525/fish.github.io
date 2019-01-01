@@ -17,7 +17,7 @@
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?%5Cfrac%7BP%28y%7Cx%29%7D%7BP%28x%29%7D">
 <meta property="og:image" content="http://yoursite.com/2018/12/24/AI-revision/payoff_matrices.png">
 <meta property="og:image" content="http://yoursite.com/2018/12/24/AI-revision/dominate.png">
-<meta property="og:updated_time" content="2019-01-01T15:40:12.376Z">
+<meta property="og:updated_time" content="2019-01-01T20:59:59.693Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AI revision">
 <meta name="twitter:description" content="Probabilistic Reasoning 概率推理基础1 enumeration 列举推理 最差情况：时间复杂度O(dn)  需要储存联合分布之后进行规范化(normalizaiton) P(Q|e1, …, en)) =    2 the chain rule 链式法则P(X1, X2, X3)  =  P(X3|X1, X2) P(X2|X1) P(X1) =&amp;gt; P(X1, X2,">
@@ -107,7 +107,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Probabilistic-Reasoning-概率推理基础"><span class="toc-number">1.</span> <span class="toc-text">Probabilistic Reasoning 概率推理基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.0.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.0.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.0.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.0.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.0.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.0.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#贝叶斯网络-Bayes-Nets"><span class="toc-number">2.</span> <span class="toc-text">贝叶斯网络(Bayes Nets)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#近似推理-approximate-inference"><span class="toc-number">2.1.</span> <span class="toc-text">近似推理 approximate inference</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-先验采样-prior-sampling"><span class="toc-number">2.1.1.</span> <span class="toc-text">1 先验采样 prior sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-拒绝采样-rejection-sampling"><span class="toc-number">2.1.2.</span> <span class="toc-text">2 拒绝采样 rejection sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-似然性加权采样-likelihood-weighting"><span class="toc-number">2.1.3.</span> <span class="toc-text">3 似然性加权采样 likelihood weighting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Gibbs-sampling"><span class="toc-number">2.1.4.</span> <span class="toc-text">4 Gibbs sampling</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lecture-3-Tutorial"><span class="toc-number">3.</span> <span class="toc-text">lecture 3 Tutorial</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Strategic-reasoning"><span class="toc-number">4.</span> <span class="toc-text">Strategic reasoning</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-dominat-strategies-占优策略"><span class="toc-number">4.1.</span> <span class="toc-text">1 dominat strategies 占优策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Nash-Equilibrium-NE-纳什均衡"><span class="toc-number">4.2.</span> <span class="toc-text">2 Nash Equilibrium (NE) 纳什均衡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Pareto-Optimality-帕累托最优"><span class="toc-number">4.3.</span> <span class="toc-text">3 Pareto Optimality 帕累托最优</span></a></li></ol></li>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Probabilistic-Reasoning-概率推理基础"><span class="toc-number">1.</span> <span class="toc-text">Probabilistic Reasoning 概率推理基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.0.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.0.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.0.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.0.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.0.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.0.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#贝叶斯网络-Bayes-Nets"><span class="toc-number">2.</span> <span class="toc-text">贝叶斯网络(Bayes Nets)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#近似推理-approximate-inference"><span class="toc-number">2.1.</span> <span class="toc-text">近似推理 approximate inference</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-先验采样-prior-sampling"><span class="toc-number">2.1.1.</span> <span class="toc-text">1 先验采样 prior sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-拒绝采样-rejection-sampling"><span class="toc-number">2.1.2.</span> <span class="toc-text">2 拒绝采样 rejection sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-似然性加权采样-likelihood-weighting"><span class="toc-number">2.1.3.</span> <span class="toc-text">3 似然性加权采样 likelihood weighting</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lecture-3-Tutorial"><span class="toc-number">3.</span> <span class="toc-text">lecture 3 Tutorial</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Strategic-reasoning"><span class="toc-number">4.</span> <span class="toc-text">Strategic reasoning</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-dominat-strategies-占优策略"><span class="toc-number">4.1.</span> <span class="toc-text">1 dominat strategies 占优策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Nash-Equilibrium-NE-纳什均衡"><span class="toc-number">4.2.</span> <span class="toc-text">2 Nash Equilibrium (NE) 纳什均衡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Pareto-Optimality-帕累托最优"><span class="toc-number">4.3.</span> <span class="toc-text">3 Pareto Optimality 帕累托最优</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Social-Welfare"><span class="toc-number">4.4.</span> <span class="toc-text">4 Social Welfare</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Constant-sum-games-常和博弈"><span class="toc-number">4.5.</span> <span class="toc-text">5 Constant sum games 常和博弈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Zero-sum-games-零和博弈"><span class="toc-number">4.6.</span> <span class="toc-text">6 Zero - sum games 零和博弈</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#canonical-2-player-game"><span class="toc-number">4.6.1.</span> <span class="toc-text">  canonical 2 player game </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Prisoner’s-Dilemma"><span class="toc-number">4.6.1.1.</span> <span class="toc-text">(1) Prisoner’s Dilemma</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Stag-Hunt-contrast-to-Prisoner’s-Dilemma-NE-is-the-“obvious”-solution-for-both-players"><span class="toc-number">4.6.1.2.</span> <span class="toc-text">(2) Stag Hunt (contrast to Prisoner’s Dilemma, NE is the “obvious” solution for both players)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Chicken-Some-game-if-you-win-you-plummet-to-your-death-1"><span class="toc-number">4.6.1.3.</span> <span class="toc-text">(3) Chicken (Some game, if you win, you plummet to your death)1</span></a></li></ol></li></ol></li></ol></li>
     </div>
   </span>
 </div>
@@ -170,8 +170,10 @@
 <li>the chain rule ==&gt; BNs</li>
 </ul>
 <h3 id="5-条件概率分布表-conditional-probability-table-CPT"><a href="#5-条件概率分布表-conditional-probability-table-CPT" class="headerlink" title="5 条件概率分布表 conditional probability table(CPT)"></a>5 条件概率分布表 conditional probability table(CPT)</h3><h3 id="6-贝叶斯网络-BNs"><a href="#6-贝叶斯网络-BNs" class="headerlink" title="6 贝叶斯网络 BNs"></a>6 贝叶斯网络 BNs</h3><ul>
-<li>n个变量， 值域d， 父节点数k</li>
-<li>完全联合分布规模 compactness  O(d<sup>n</sup>)</li>
+<li><p>n个变量， 值域d， 父节点数k</p>
+</li>
+<li><p>完全联合分布规模 compactness  O(d<sup>n</sup>)</p>
+</li>
 <li><p>贝叶斯网络规模 O(n*d<sup>k</sup>)</p>
 <p>P(X<sub>1</sub>, X<sub>2</sub>, …, X<sub>n</sub>)  = Ԥ<sub>i </sub> P(X<sub>i</sub>|Parents(X<sub>i</sub>))</p>
 </li>
@@ -180,7 +182,8 @@
 </ul>
 <h1 id="贝叶斯网络-Bayes-Nets"><a href="#贝叶斯网络-Bayes-Nets" class="headerlink" title="贝叶斯网络(Bayes Nets)"></a>贝叶斯网络(Bayes Nets)</h1><h2 id="近似推理-approximate-inference"><a href="#近似推理-approximate-inference" class="headerlink" title="近似推理 approximate inference"></a>近似推理 approximate inference</h2><h3 id="1-先验采样-prior-sampling"><a href="#1-先验采样-prior-sampling" class="headerlink" title="1 先验采样 prior sampling"></a>1 先验采样 prior sampling</h3><p>按拓扑图顺序采样 n = 1, 2, …, n</p>
 <h3 id="2-拒绝采样-rejection-sampling"><a href="#2-拒绝采样-rejection-sampling" class="headerlink" title="2 拒绝采样 rejection sampling"></a>2 拒绝采样 rejection sampling</h3><p>采样时删除条件不满足的样本</p>
-<h3 id="3-似然性加权采样-likelihood-weighting"><a href="#3-似然性加权采样-likelihood-weighting" class="headerlink" title="3 似然性加权采样 likelihood weighting"></a>3 似然性加权采样 likelihood weighting</h3><h3 id="4-Gibbs-sampling"><a href="#4-Gibbs-sampling" class="headerlink" title="4 Gibbs sampling"></a>4 Gibbs sampling</h3><h1 id="lecture-3-Tutorial"><a href="#lecture-3-Tutorial" class="headerlink" title="lecture 3 Tutorial"></a>lecture 3 Tutorial</h1><ul>
+<h3 id="3-似然性加权采样-likelihood-weighting"><a href="#3-似然性加权采样-likelihood-weighting" class="headerlink" title="3 似然性加权采样 likelihood weighting"></a>3 似然性加权采样 likelihood weighting</h3><p>###4 Gibbs sampling</p>
+<h1 id="lecture-3-Tutorial"><a href="#lecture-3-Tutorial" class="headerlink" title="lecture 3 Tutorial"></a>lecture 3 Tutorial</h1><ul>
 <li>1 navie bayes model</li>
 </ul>
 <p>P(Cause， Effect<sub>1</sub>,  Effect<sub>2</sub>, …,  Effect<sub>n</sub>)  =P(Cause)  Ԥ<sub>i </sub> P(Effect<sub>i</sub>|Cause)</p>
@@ -191,8 +194,10 @@
 <p>P(f|⌝l, ⌝i) = 0</p>
 <p>P(⌝f|⌝l, ⌝i) = 1</p>
 <ul>
-<li>3 计算可能的概率数量 ： have network ∑<sub>n</sub> 2<sup>k</sup> ; no network 2<sup>n</sup>-1</li>
-<li>5 Enumeration algorithm</li>
+<li><p>3 计算可能的概率数量 ： have network ∑<sub>n</sub> 2<sup>k</sup> ; no network 2<sup>n</sup>-1</p>
+</li>
+<li><p>5 Enumeration algorithm</p>
+</li>
 </ul>
 <p>(1) 正规化ɑ(P(m) , P(⌝m)) </p>
 <p>(2) 枚举展开所有隐藏变量(t,⌝t, c, ⌝c) </p>
@@ -223,11 +228,19 @@
 <p>A选择confess后，A选择confess(5)比deny(10)好; B选择deny后， A选择confess(2) 比deny(3)好 ==》B的 u(confess) &gt; u(deny) ==&gt; B选择confess</p>
 <p>==&gt; 但是同时选择confess后，结果不是最好的A(5) B(5)「囚徒困境 prisoner’s dilemma」</p>
 <ul>
-<li><p>可能只有一方有dominat strategies</p>
-</li>
+<li>可能只有一方有dominat strategies</li>
+</ul>
+<ul>
 <li><p>囚徒困境 ： 可能都不是最好结果</p>
 </li>
-<li>占优策略只对某一方而言</li>
+<li><p>占优策略只对某一方而言</p>
+<font color="#800000" size="4">分析： </font>
+
+<font color="#800000" size="4">(1) 某方存在占优策略 ：A dominates B for i, since i get a bigger payoff for A, no matter what j plays </font>
+
+<font color="#800000" size="4">(2) 不存在占优策略 ：no strategy is better for either i or j no matter what the other does. </font>
+
+</li>
 </ul>
 <h2 id="2-Nash-Equilibrium-NE-纳什均衡"><a href="#2-Nash-Equilibrium-NE-纳什均衡" class="headerlink" title="2 Nash Equilibrium (NE) 纳什均衡"></a>2 Nash Equilibrium (NE) 纳什均衡</h2><p>two strategies are best reponses to each other</p>
 <p>在信息不流通的情况下，每一方的反应都是对其他人的策略的最优反应(对于一个组，互相都是最好的组合)</p>
@@ -236,44 +249,37 @@
 <li>some interaction scenario have more than one NE 有多个纳什均衡组合</li>
 <li>对一个组合达到最优选择（不同于占优策略，只考虑自己一方的结果）</li>
 </ul>
-<font color="#8B0000" size="3">首先A选择一方i，导致B的最优选择为j；然后B选择j后，判断A是否选择i为最优；如果满足条件，则策略 ( i, j ) 最优</font>
+<font color="#800000" size="3">首先A选择一方i，导致B的最优选择为j；然后B选择j后，判断A是否选择i为最优；如果满足条件，则策略 ( i, j ) 最优 </font>
+
+<font color="#800000" size="4"><em> 习题分析 </em> </font>
+
+<font color="#800000" size="4">(1)是NE ： for (A, B) , if j changes strategy, it will get 1 rather 2, if i changes strategy, it will get 2 rather 4. so (A, B) is a Nash Equilibrium.</font>
+
+<font color="#800000" size="4">(1)不是NE ： for (A, B) , if j changes strategy, its payoff will go up to 4, so (A, B) is not a Nash Equilibrium.</font>
+
+
 
 <h2 id="3-Pareto-Optimality-帕累托最优"><a href="#3-Pareto-Optimality-帕累托最优" class="headerlink" title="3 Pareto Optimality 帕累托最优"></a>3 Pareto Optimality 帕累托最优</h2><ul>
 <li>对于每一方来说，分配方案已经是最好的（如果一方想获得更多利益，会损害其他人的利益）</li>
 <li>No other outcome that makes one agent better off without making another agent worse off</li>
-<li>if an outcome is PO, then at least one agent will be reluctant to move away from it(because this agent will be worse off)</li>
+<li>if an outcome is Pareto Optimality, then at least one agent will be reluctant to move away from it(because this agent will be worse off)</li>
 </ul>
-<font color="#8B0000" size="3">对选定的组合尝试改变其他方，观察是否至少有一方反对</font>
+<font color="#800000" size="3">对选定的组合尝试改变其他方，观察是否至少有一方反对</font>
 
+<font color="#800000" size="4"><em> 习题分析 </em> </font>
 
+<font color="#800000" size="4">(1)是Pareto Optimality ： (A, B) is Pareto Optimality since moving away from either will make at least one agent worse off.</font>
 
+<font color="#800000" size="4">(2)不是Pareto Optimality： (A, B)  is not a Pareto Optimality since moving A to C, the payoff will go up.</font>
 
+<h2 id="4-Social-Welfare"><a href="#4-Social-Welfare" class="headerlink" title="4 Social Welfare"></a>4 Social Welfare</h2><p>整体收益最大 overall benefit, not individuals</p>
+<font color="#800000" size="4"><em> 习题分析 </em> </font>
 
+<font color="#800000" size="4">There are three outcomes with a social welfare of 6 : (A, B), (A, C)和(D,B), which is the maximum social welfare of any out come  </font>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h2 id="5-Constant-sum-games-常和博弈"><a href="#5-Constant-sum-games-常和博弈" class="headerlink" title="5 Constant sum games 常和博弈"></a>5 Constant sum games 常和博弈</h2><p>u<sub>i</sub>(a) + u<sub>j</sub>(a) = c for all a ∈  A<sub>i</sub> * A<sub>j</sub></p>
+<h2 id="6-Zero-sum-games-零和博弈"><a href="#6-Zero-sum-games-零和博弈" class="headerlink" title="6 Zero - sum games 零和博弈"></a>6 Zero - sum games 零和博弈</h2><p>u<sub>i</sub>(a) + u<sub>j</sub>(a) = 0 for all a ∈  A<sub>i</sub> * A<sub>j</sub></p>
+<h3 id="canonical-2-player-game"><a href="#canonical-2-player-game" class="headerlink" title="  canonical 2 player game "></a><strong><em>  canonical 2 player game </em></strong></h3><h4 id="1-Prisoner’s-Dilemma"><a href="#1-Prisoner’s-Dilemma" class="headerlink" title="(1) Prisoner’s Dilemma"></a>(1) Prisoner’s Dilemma</h4><h4 id="2-Stag-Hunt-contrast-to-Prisoner’s-Dilemma-NE-is-the-“obvious”-solution-for-both-players"><a href="#2-Stag-Hunt-contrast-to-Prisoner’s-Dilemma-NE-is-the-“obvious”-solution-for-both-players" class="headerlink" title="(2) Stag Hunt (contrast to Prisoner’s Dilemma, NE is the “obvious” solution for both players)"></a>(2) Stag Hunt (contrast to Prisoner’s Dilemma, NE is the “obvious” solution for both players)</h4><h4 id="3-Chicken-Some-game-if-you-win-you-plummet-to-your-death-1"><a href="#3-Chicken-Some-game-if-you-win-you-plummet-to-your-death-1" class="headerlink" title="(3) Chicken (Some game, if you win, you plummet to your death)1"></a>(3) Chicken (Some game, if you win, you plummet to your death)<a href="https://www.youtube.com/watch?v=u7hZ9jKrwvo" target="_blank" rel="noopener">1</a></h4>
   </div>
 </article>
 
@@ -298,7 +304,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Probabilistic-Reasoning-概率推理基础"><span class="toc-number">1.</span> <span class="toc-text">Probabilistic Reasoning 概率推理基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.0.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.0.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.0.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.0.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.0.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.0.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#贝叶斯网络-Bayes-Nets"><span class="toc-number">2.</span> <span class="toc-text">贝叶斯网络(Bayes Nets)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#近似推理-approximate-inference"><span class="toc-number">2.1.</span> <span class="toc-text">近似推理 approximate inference</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-先验采样-prior-sampling"><span class="toc-number">2.1.1.</span> <span class="toc-text">1 先验采样 prior sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-拒绝采样-rejection-sampling"><span class="toc-number">2.1.2.</span> <span class="toc-text">2 拒绝采样 rejection sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-似然性加权采样-likelihood-weighting"><span class="toc-number">2.1.3.</span> <span class="toc-text">3 似然性加权采样 likelihood weighting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Gibbs-sampling"><span class="toc-number">2.1.4.</span> <span class="toc-text">4 Gibbs sampling</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lecture-3-Tutorial"><span class="toc-number">3.</span> <span class="toc-text">lecture 3 Tutorial</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Strategic-reasoning"><span class="toc-number">4.</span> <span class="toc-text">Strategic reasoning</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-dominat-strategies-占优策略"><span class="toc-number">4.1.</span> <span class="toc-text">1 dominat strategies 占优策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Nash-Equilibrium-NE-纳什均衡"><span class="toc-number">4.2.</span> <span class="toc-text">2 Nash Equilibrium (NE) 纳什均衡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Pareto-Optimality-帕累托最优"><span class="toc-number">4.3.</span> <span class="toc-text">3 Pareto Optimality 帕累托最优</span></a></li></ol></li>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Probabilistic-Reasoning-概率推理基础"><span class="toc-number">1.</span> <span class="toc-text">Probabilistic Reasoning 概率推理基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-enumeration-列举推理"><span class="toc-number">1.0.1.</span> <span class="toc-text">1 enumeration 列举推理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-the-chain-rule-链式法则"><span class="toc-number">1.0.2.</span> <span class="toc-text">2 the chain rule 链式法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-bayes-rule-贝叶斯法则"><span class="toc-number">1.0.3.</span> <span class="toc-text">3 bayes rule 贝叶斯法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-条件独立-conditional-independence"><span class="toc-number">1.0.4.</span> <span class="toc-text">4 条件独立 conditional independence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件概率分布表-conditional-probability-table-CPT"><span class="toc-number">1.0.5.</span> <span class="toc-text">5 条件概率分布表 conditional probability table(CPT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-贝叶斯网络-BNs"><span class="toc-number">1.0.6.</span> <span class="toc-text">6 贝叶斯网络 BNs</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#贝叶斯网络-Bayes-Nets"><span class="toc-number">2.</span> <span class="toc-text">贝叶斯网络(Bayes Nets)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#近似推理-approximate-inference"><span class="toc-number">2.1.</span> <span class="toc-text">近似推理 approximate inference</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-先验采样-prior-sampling"><span class="toc-number">2.1.1.</span> <span class="toc-text">1 先验采样 prior sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-拒绝采样-rejection-sampling"><span class="toc-number">2.1.2.</span> <span class="toc-text">2 拒绝采样 rejection sampling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-似然性加权采样-likelihood-weighting"><span class="toc-number">2.1.3.</span> <span class="toc-text">3 似然性加权采样 likelihood weighting</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#lecture-3-Tutorial"><span class="toc-number">3.</span> <span class="toc-text">lecture 3 Tutorial</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Strategic-reasoning"><span class="toc-number">4.</span> <span class="toc-text">Strategic reasoning</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-dominat-strategies-占优策略"><span class="toc-number">4.1.</span> <span class="toc-text">1 dominat strategies 占优策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Nash-Equilibrium-NE-纳什均衡"><span class="toc-number">4.2.</span> <span class="toc-text">2 Nash Equilibrium (NE) 纳什均衡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Pareto-Optimality-帕累托最优"><span class="toc-number">4.3.</span> <span class="toc-text">3 Pareto Optimality 帕累托最优</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Social-Welfare"><span class="toc-number">4.4.</span> <span class="toc-text">4 Social Welfare</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Constant-sum-games-常和博弈"><span class="toc-number">4.5.</span> <span class="toc-text">5 Constant sum games 常和博弈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Zero-sum-games-零和博弈"><span class="toc-number">4.6.</span> <span class="toc-text">6 Zero - sum games 零和博弈</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#canonical-2-player-game"><span class="toc-number">4.6.1.</span> <span class="toc-text">  canonical 2 player game </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Prisoner’s-Dilemma"><span class="toc-number">4.6.1.1.</span> <span class="toc-text">(1) Prisoner’s Dilemma</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Stag-Hunt-contrast-to-Prisoner’s-Dilemma-NE-is-the-“obvious”-solution-for-both-players"><span class="toc-number">4.6.1.2.</span> <span class="toc-text">(2) Stag Hunt (contrast to Prisoner’s Dilemma, NE is the “obvious” solution for both players)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Chicken-Some-game-if-you-win-you-plummet-to-your-death-1"><span class="toc-number">4.6.1.3.</span> <span class="toc-text">(3) Chicken (Some game, if you win, you plummet to your death)1</span></a></li></ol></li></ol></li></ol></li>
     </div>
 
     <div id="share-footer" style="display: none">
