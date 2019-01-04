@@ -17,7 +17,15 @@
 <meta property="og:image" content="https://img-blog.csdn.net/20180821223828101?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyODI4NDA0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="https://img-blog.csdn.net/20180821225753950?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyODI4NDA0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="https://img-blog.csdn.net/20180821225858857?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyODI4NDA0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2019-01-04T11:58:53.701Z">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=p%28x%7C%5Ctheta%29">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Ctheta">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Ctheta">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=x">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=x">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=x">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Ctheta">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=x">
+<meta property="og:updated_time" content="2019-01-04T17:14:40.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="statistics_revision">
 <meta name="twitter:description" content="一、正态分布正态分布（Normal distribution）又名高斯分布（Gaussiandistribution），若随机变量X服从一个数学期望为μ、方差为σ^2的高斯分布，记为N(μ，σ^2)。其概率密度函数为正态分布的期望值μ决定了其位置，其标准差σ决定了分布的幅度。我们通常所说的标准正态分布是μ = 0,σ = 1的正态分布。  二、卡方分布 三、t分布 四、F分布 应用场景：Z就是正态">
@@ -149,6 +157,28 @@
 <p>应用场景：<br>Z就是正态分布，X^2分布是一个正态分布的平方，t分布是一个正态分布除以（一个X^2分布除以它的自由度然后开根号），F分布是两个卡方分布分布除以他们各自的自由度再相除</p>
 <p>比如X是一个Z分布，Y(n)=X1^2+X2^2+……+Xn^2,这里每个Xn都是一个Z分布，t(n)=X/根号(Y/n),F（m,n）=(Y1/m)/(Y2/N)</p>
 <p>各个分布的应用如下：<br>方差已知情况下求均值是Z检验。<br>方差未知求均值是t检验（样本标准差s代替总体标准差R，由样本平均数推断总体平均数）<br>均值方差都未知求方差是X^2检验<br>两个正态分布样本的均值方差都未知情况下求两个总体的方差比值是F检验。</p>
+<p>五 似然函数(已知样本分布，对于不同得计算方式，x样本出现的概率)</p>
+<p>1 对于这个函数： <img src="https://www.zhihu.com/equation?tex=p%28x%7C%5Ctheta%29" alt="p(x|\theta)"> 输入有两个：x表示某一个具体的数据； <img src="https://www.zhihu.com/equation?tex=%5Ctheta" alt="\theta"> 表示模型的参数</p>
+<p>   如果 <img src="https://www.zhihu.com/equation?tex=%5Ctheta" alt="\theta"> 是已知确定的， <img src="https://www.zhihu.com/equation?tex=x" alt="x"> 是变量，这个函数叫做概率函数(probability function)，它描述对于不同的样本点 <img src="https://www.zhihu.com/equation?tex=x" alt="x"> ，其出现概率是多少。</p>
+<p>   如果 <img src="https://www.zhihu.com/equation?tex=x" alt="x"> 是已知确定的， <img src="https://www.zhihu.com/equation?tex=%5Ctheta" alt="\theta"> 是变量，这个函数叫做似然函数(likelihood function), 它描述对于不同的模型参数，出现 <img src="https://www.zhihu.com/equation?tex=x" alt="x"> 这个样本点的概率是多少。</p>
+<p>机器之心讲解 ： <a href="https://www.jiqizhixin.com/articles/2018-01-09-6" target="_blank" rel="noopener">https://www.jiqizhixin.com/articles/2018-01-09-6</a></p>
+<p>最小二乘法是另一种常用的机器学习模型参数估计方法。结果表明，当模型向上述例子中一样被假设为高斯分布时，MLE 的估计等价于最小二乘法。</p>
+<p><strong>需要加强！！！！</strong></p>
+<p>1 期望方差公式</p>
+<p>2 正态分布标准化（5）</p>
+<p>3 二项分布（投票选择是二元的）转化为正态分布（最终投票结果的概率）的关系（5）</p>
+<p>4 possion distribution的应用场景（时间区间中事件发生的数量no.）（4）</p>
+<p>5 正态分布（4） 和样本均值的正态分布的区别：（4）T5（5）</p>
+<p>6 <a href="https://www.matongxue.com/madocs/808.html" target="_blank" rel="noopener">https://www.matongxue.com/madocs/808.html</a> 什么是无偏估计（多次求均值后的误差很小）（6）T1</p>
+<p>7  均匀分布 uniform distribution （6）E Var <a href="https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/" target="_blank" rel="noopener">https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</a></p>
+<p>8  样本足够大时 sample mean = estimate population mean</p>
+<p>9 最大似然 maximum likelihood</p>
+<p>10 样本小时，用t分布计算；样本大时，正态分布 = t 分布</p>
+<p>11 假设检验 <a href="https://cosx.org/2010/11/hypotheses-testing" target="_blank" rel="noopener">https://cosx.org/2010/11/hypotheses-testing</a></p>
+<p>12 T校验 <a href="https://mangowu97.github.io/%E5%82%BB%E7%93%9C%E5%BC%84%E6%87%82t%E6%A3%80%E9%AA%8C" target="_blank" rel="noopener">https://mangowu97.github.io/%E5%82%BB%E7%93%9C%E5%BC%84%E6%87%82t%E6%A3%80%E9%AA%8C</a></p>
+<p><strong>还未清楚</strong></p>
+<p>1 excerise 4 T4</p>
+<p>2 excerise 5 T4</p>
 
   </div>
 </article>
