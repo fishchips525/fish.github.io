@@ -15,7 +15,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2019/01/01/Database/x+y.png">
 <meta property="og:image" content="http://yoursite.com/2019/01/01/Database/nosql_type.png">
-<meta property="og:updated_time" content="2019-01-10T12:48:20.125Z">
+<meta property="og:updated_time" content="2019-01-10T12:59:27.293Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Database">
 <meta name="twitter:description" content="1 General Database Concepts(3)2 Relational Databases : ER Modelling, Normalization(1)3 SQL : DDL, DML, Triggers(3)4 Data Warehouses(1)5 Information Retrieval(2)(1) Boolean query optimizationhttp://dat">
@@ -156,6 +156,27 @@
 <li>N number of documents in document collection</li>
 </ul>
 <h4 id="3-Term-Frequencies"><a href="#3-Term-Frequencies" class="headerlink" title="(3) Term Frequencies"></a>(3) Term Frequencies</h4><p><strong>Term Frequencies</strong> : the number of occurrences of a term in a document. Sometimes normalized with total number of occurrences in the document.</p>
+<ul>
+<li><p><strong>Collection frequency (cf )</strong> : total number of occurrences of a term in the collection</p>
+</li>
+<li><p><strong>Document frequency (df )</strong> :  Number of documents in the collection that contain a term </p>
+</li>
+<li><p><strong>tf × idf (or tf .idf ) measure combines</strong></p>
+<ul>
+<li><p><strong>term frequency (tf )</strong> : number of times term occurs in document</p>
+</li>
+<li><p><strong>inverse document frequency (idf )</strong> : measure of informativeness of a term: its rarity across the whole corpus . idf = log(N/df)</p>
+</li>
+<li><p>idf 特点：</p>
+<p>1  highest when t occurs many times within a small number </p>
+<p>of documents; </p>
+<p>2  lower when the term occurs fewer times in a document, or </p>
+<p>occurs in many documents; </p>
+<p>3  lowest when the term occurs in virtually all documents </p>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="6-NoSQL-2"><a href="#6-NoSQL-2" class="headerlink" title="6 NoSQL(2)"></a>6 NoSQL(2)</h2><p><img src="/2019/01/01/Database/nosql_type.png" alt=""></p>
 
   </div>
