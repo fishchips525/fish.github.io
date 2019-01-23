@@ -13,13 +13,13 @@
 <meta property="og:site_name" content="Huang Fish">
 <meta property="og:description" content="Tutorial 011 (a) Supervised learning: Discover a mapping between xi and yi (Given xi, say what the correct yi is) . training set：D = {(xi, yi)}i=1N xi : input data set yi : output data set Example : i">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/01/23/MachineLearning-course/KNN1.png">
-<meta property="og:image" content="http://yoursite.com/2019/01/23/MachineLearning-course/KNN2.png">
-<meta property="og:updated_time" content="2019-01-23T22:21:04.335Z">
+<meta property="og:image" content="http://yoursite.com/2019/01/23/MachineLearning-course/MachineLearing-course/KNN1.png">
+<meta property="og:image" content="http://yoursite.com/2019/01/23/MachineLearning-course/MachineLearing-course/KNN2.png">
+<meta property="og:updated_time" content="2019-01-23T23:13:35.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MachineLearning-course">
 <meta name="twitter:description" content="Tutorial 011 (a) Supervised learning: Discover a mapping between xi and yi (Given xi, say what the correct yi is) . training set：D = {(xi, yi)}i=1N xi : input data set yi : output data set Example : i">
-<meta name="twitter:image" content="http://yoursite.com/2019/01/23/MachineLearning-course/KNN1.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/23/MachineLearning-course/MachineLearing-course/KNN1.png">
     
     
         
@@ -153,13 +153,20 @@
 <p>(c) <font color="#F08080" size="3">clustering : </font>image processing</p>
 <p>(d) <font color="#F08080" size="3">regression : </font>credit scoring ; weapon of math destruction</p>
 <p>3 <font color="#F08080" size="3">K-nearest neighbour</font></p>
-<p>(a) how a KNN is trained : no training. use the training set raw.</p>
+<p>(a) how a KNN is trained : </p>
+<p>​     no training. use the training set raw.</p>
 <p>(b) how a KNN classify a new example : </p>
-<p><img src="/2019/01/23/MachineLearning-course/KNN1.png" alt=""></p>
-<p><img src="/2019/01/23/MachineLearning-course/KNN2.png" alt=""></p>
+<p><img src="/2019/01/23/MachineLearning-course/MachineLearing-course/KNN1.png" alt=""></p>
+<p><img src="/2019/01/23/MachineLearning-course/MachineLearing-course/KNN2.png" alt=""></p>
 <p>(c) difference in performance in 1NN and 5NN:</p>
-<p>​    1NN overfits the data. The decision boundary for a 1NN classfier will tend to hug the </p>
-<p>examples quite tightly. </p>
+<p>​    1NN overfits the data. The decision boundary for a 1NN classfier will tend to hug the examples quite tightly. </p>
+<p>4 <font color="#F08080" size="3">Performance metrics</font></p>
+<p>(1) accuracy = (correct)/(total)</p>
+<p>(2) confusion matrix : take predict number 1 to be positive, take 0 to be negative ; actual to be true or false=&gt; TP/FP/TN/FN. (since the large numbers are along the diagonal means mainly classifies correctly)</p>
+<p>(3) precision = (TP)/(TP + FP)</p>
+<p>(4) recall = (TP)/(TP+FN)</p>
+<p>(5) F1score = 2/(1/precision+1/recall)</p>
+<p>5 <font color="#F08080" size="3">KNN ; classifier: Manhattan distance</font></p>
 
   </div>
 </article>
